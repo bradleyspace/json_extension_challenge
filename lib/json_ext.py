@@ -98,6 +98,19 @@ def json_to_csv(filename):
     with open(filename, "r") as f:
         json_data = json.load(f)
 
-    #
+    keys = json_data[0].keys()
+
+    new_filename = filename[0:len(filename)-4] + "csv"
+    with open(new_filename, "w") as f:
+        
+        f.write(",".join(key.capitalize() for key in keys) + "\n")
+
+        for entry in json_data:
+            f.write(",".join(map(str, [item for _,item in entry.items()])) + "\n")
+
+    return new_filename
+
+        
+
 
     
