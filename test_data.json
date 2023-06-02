@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Bob",
+        "age": 22,
+        "occupation": "Social Media Marketing",
+        "location": "Hull"
+    },
+    {
+        "name": "Michael",
+        "age": 26,
+        "occupation": "Developer",
+        "location": "Manchester"
+    },
+    {
+        "name": "James",
+        "age": 35,
+        "occupation": "CEO",
+        "location": "London"
+    }
+]
